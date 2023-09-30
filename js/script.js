@@ -86,11 +86,11 @@ function AddToCart(name,e){
     $(e).attr('disabled','disabled');
     if(items.length < 3)
     {
-        document.getElementById('aff').innerHTML= '<p style=" margin-bottom: 0%;display: flex; justify-content: center;color: black;">يجب ان تحتوي سلتك على 3 عطور</p><p style="color: black;display: flex; justify-content: center;"> تحتوي سلتك الان على'+ items.length + ' عطور</p>'
+        document.getElementById('aff').innerHTML= '<p style=" margin-bottom: 0%;display: flex; justify-content: center;color: black;">يجب ان تحتوي سلتك على 3 عطور</p><p style="color: black;display: flex; justify-content: center;">   تحتوي سلتك الان على'+ items.length + ' عطور</p>'
     }
     else
     {
-        document.getElementById('aff').innerHTML= '<div style="margin-top: 2%; display: flex;justify-content: center;text-align: center;"><button class="days"  style=" border: none;margin: 0 ; padding : 5px 15px; background:#f15d30; color : white ; text-align: center; font-weight : 400; width: 15%;"><a href="cart.html" style="color: white;"> مشاهدة السلة</a></button><span style="color: black;margin-left: 2%; margin-top: 0.5%;">   سلتك مكتملة  </span></div>'
+        document.getElementById('aff').innerHTML= '<div style="margin-top: 2%; display: flex;justify-content: center;text-align: center;"><button class="days"  style=" border: none;margin: 0 ; padding : 5px 15px; background:#f15d30; color : white ; text-align: center; font-weight : 400; width: auto;"><a href="cart.html" style="color: white;"> مشاهدة السلة</a></button><span style="color: black;margin-left: 2%; margin-top: 0.5%;">   سلتك مكتملة  </span></div>'
 
     }
 }
