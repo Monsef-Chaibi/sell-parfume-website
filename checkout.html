@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Pacific</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+	<link rel="stylesheet" href="./css/animate.css">
+	
+	<link rel="stylesheet" href="./css/owl.carousel.min.css">
+	<link rel="stylesheet" href="./css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="./css/magnific-popup.css">
+
+	<link rel="stylesheet" href="./css/bootstrap-datepicker.css">
+	<link rel="stylesheet" href="./css/jquery.timepicker.css">
+
+	
+	<link rel="stylesheet" href="./css/flaticon.css">
+	<link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+        * {
+            font-family: 'Cairo', sans-serif;
+        }
+        h1 , h2 , h3 , h4 , h5 , h6 {
+            font-family: 'Cairo', sans-serif;
+
+        }
+    </style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+		<div class="container">
+			<a class="navbar-brand" href="./index.html">Vavavoom<span>Best perfumes</span></a>
+		
+			<div style="display: flex; align-items: center;">
+                <a href="./about.html" style="font-size: 20px; ">شرح عطورنا</a>
+                <button class="navbar-toggler" onclick="location.href = './cart.html' " type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-cart-shopping" style="color : rgb(153, 153, 153) ; fill : rgb(209, 209, 209) ; font-size: 25px;"></i>
+                </button>
+                
+            </div>
+           
+			
+		</div>
+	</nav>
+	
+	<!-- END nav -->
+	
+
+
+    <section class="ftco-section">
+    <div class="container">
+        <div class="row justify-content-center pb-4">
+            <div class="col-md-12 heading-section text-center ftco-animate">
+   
+                <h2 class="mb-4">اتمام الطلب</h2>
+            </div>
+        </div>
+        <div id="products" style="width: 100%;">
+            
+            <div id="check-backup"></div>
+            <div style="display: flex ; flex-direction : column ; margin : 5px 0; ">
+                <label>الاسم الكامل</label>
+                <input id="name" type="text" style="height : 40px; border: solid 1px silver ; padding-left : 10px; ">
+            </div>
+      
+            <div style="display: flex ; flex-direction : column ; margin : 5px 0; ">
+                <label>العنوان الكامل</label>
+                <input id="address" type="text" style="height : 40px; border: solid 1px silver ; padding-left : 10px; ">
+            </div>
+      
+            <div style="display: flex ; flex-direction : column ; margin : 5px 0; ">
+                <label>رقم الهاتف</label>
+                <input id="phone" type="number" style="height : 40px; border: solid 1px silver ; padding-left : 10px; ">
+            </div>
+
+            <hr>
+            
+            <div style="display: flex ; justify-content : space-between ; align-items :center ; ">
+                <strong>سعر الباقة</strong>
+                <span style="color: green;">50 ريال</span>
+            </div>
+
+            <hr>
+            <div style="display: flex ; justify-content : space-between ; align-items :center ; ">
+                <strong>سعر التوصيل</strong>
+                <span style="color: green;">مجاني </span>
+            </div>
+
+            <hr>
+
+            <div style="display: flex ; justify-content : space-between ; align-items :center ; ">
+                <strong>المجموع</strong>
+                <span style="color: green;">50 ريال</span>
+            </div>
+            <hr>
+
+            <div style="display: flex ; justify-content : center ; align-items :center ; ">
+                <strong> الدفع عند الاستلام  </strong>
+                
+            </div>
+
+            <div onclick="checkout()" class="days" style="cursor: grab;margin-top : 25px; width : 100%; padding : 5px 0; background:#f15d30; color : white ; text-align: center; font-weight : 400;">ارسال الطلب</div>
+
+            
+        
+            
+        </div>
+    </div>
+</section>
+
+
+	
+<script type="text/javascript"
+src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+emailjs.init('EQX3wUslv0fthkl4y')
+</script>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("EQX3wUslv0fthkl4y");
+   })();
+</script>
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="./js/popper.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/jquery.easing.1.3.js"></script>
+	<script src="./js/jquery.waypoints.min.js"></script>
+	<script src="./js/jquery.stellar.min.js"></script>
+	<script src="./js/owl.carousel.min.js"></script>
+	<script src="./js/jquery.magnific-popup.min.js"></script>
+	<script src="./js/jquery.animateNumber.min.js"></script>
+	<script src="./js/bootstrap-datepicker.js"></script>
+	<script src="./js/scrollax.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+	<script src="./js/google-map.js"></script>
+	<script src="./js/main.js"></script>
+	<script src="./js/script.js"></script>
+	
+</body>
+</html>
