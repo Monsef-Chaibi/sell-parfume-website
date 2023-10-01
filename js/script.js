@@ -54,9 +54,7 @@ function checkout() {
         )
           ).catch(err=>console.log(er))
        
-          setTimeout(function() {
-            window.location.href = 'index.html'; // Replace with the actual URL of your index page
-        }, 2000);
+         
     }
 
 }
