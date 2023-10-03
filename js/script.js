@@ -47,13 +47,16 @@ function checkout() {
         const serviceId="service_8lmpsy9";
         const tmp="template_xki8eud";
           emailjs.send(serviceId,tmp,params).then(
-         Swal.fire(
-            'مبروك تم الشراء بنجاح',
-            'تم ارسال المعلومات بنجاح',
-           'success'
-        )
+            Swal.fire({
+                icon: 'success',
+                title:  'مبروك تم الشراء بنجاح',
+                showConfirmButton: false,
+                timer: 1500
+              })
           ).catch(err=>console.log(er))
-       
+          setTimeout(function () {
+            window.location.href = "index.html"; //will redirect to your blog page (an ex: blog.html)
+         }, 2000);
          
     }
 
